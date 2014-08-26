@@ -26,7 +26,7 @@ function removeFromDataStructure(dataStructure, listElement){
     dataStructure.remove();
     listElement.removeChild(listElement.firstElementChild);
   } else {
-    alert('Data Structure is empty !!!');
+    dataStructure instanceof Stack ? alert('Stack is empty !!!') : alert('Queue is empty !!!')
   }
 }
 
